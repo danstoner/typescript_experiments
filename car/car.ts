@@ -7,7 +7,9 @@ class Car {
 
     // Constructor
     constructor(make: string, color: string, doors = 4) {
-        this.make = make;
+        // The following forces the constructor so use the setters (including validation!) 
+        // rather than setting private properties directly.
+        this.make = make;  
         this.color = color;
         this.doors = doors;
     }
